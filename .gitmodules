@@ -1,0 +1,12 @@
+[submodule "Giraffe"]
+	path = Giraffe
+	url = git@github.com:joseph-zhong/Giraffe.git
+[submodule "BeaverDam"]
+	path = BeaverDam
+	url = git@github.com:joseph-zhong/BeaverDam.git
+[submodule "cnn-text-classification-tf"]
+	path = cnn-text-classification-tf
+	url = git@github.com:joseph-zhong/cnn-text-classification-tf.git
+[submodule "social-scene-understanding"]
+	path = social-scene-understanding
+	url = git@github.com:joseph-zhong/social-scene-understanding.git
