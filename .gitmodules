@@ -10,3 +10,12 @@
 [submodule "social-scene-understanding"]
 	path = social-scene-understanding
 	url = git@github.com:joseph-zhong/social-scene-understanding.git
+[submodule "Theano"]
+	path = Theano
+	url = https://github.com/Theano/Theano
+[submodule "Spectrum"]
+	path = Spectrum
+	url = git@github.com:joseph-zhong/Spectrum.git
+[submodule "queens"]
+	path = queens
+	url = git@github.com:joseph-zhong/queens.git
