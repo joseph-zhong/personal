@@ -18,6 +18,10 @@
   - Drivers missing...
   - ...
 
+### Basics
+
+- `sudo update-pciids` will update the names of the drivers in the PCI slots
+
 ## Trouble Shooting
 
 ### Ubuntu 14.04 Network Drivers are Missing
