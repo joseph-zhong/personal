@@ -6,8 +6,8 @@
 - For MacOS, use `unetbootin.app`
 - Follow the application instructions to create the bootable USB
 - After downloading the desired ISO, simply boot into the BIOS 
-  - On Windows, perhaps try `F1`, `F2`, `ESC`, `F10`, `F11`, `F12`, `del`
-  - On MacOS, with Unetbootin, it should automatically bring you to a selection menu to boot from the USB
+  - Perhaps try `F1`, `F2`, `ESC`, `F10`, `F11`, `F12`, `del`
+  - On MacBooks, with Unetbootin, it should automatically bring you to a selection menu to boot from the USB
 
 ## Install Ubuntu
 
@@ -48,3 +48,22 @@ Install them all from the terminal:
 ```
 sudo dpkg -i *.deb
 ```
+
+## Installing Ubuntu 16.04
+
+This was much smoother of an experience and much fewer issues
+
+- Installing CUDA was simple
+  - `sudo dpkg -i <downloaded_cuda_repo.deb>`
+  - `sudo apt-get update; sudo apt-get install cuda; sudo reboot`
+- Issues which remained:
+  - Soundcard fails to automatically switch outputs when headphones are plugged in
+  - Mouse pad is too low of sensitivity even on maxed settings
+  - Have yet to figure out how to safely encorporate SteelSeries keyboard-backlight
+
+## Soundcard fails to switch between outputs automatically
+
+Looking in Sound, there seems to be two output modes, "Digital" and "Speakers", where Digital handles output for headphones etc.
+
+- Apparently this is a dumb known issue...
+  - https://askubuntu.com/questions/769593/16-04-headphones-detected-but-not-switched-on-automatically-after-startup
