@@ -22,6 +22,9 @@
 
 - `sudo update-pciids` will update the names of the devices in the PCI slots
   - Check them out here: `lspci`
+- For Synaptic Mouse drivers, check out https://askubuntu.com/questions/230361/increase-sensitivity-of-a-touchpad-with-the-synaptics-driver for changing the default settings 
+  - `synclient MaxSpeed=2.25 AccelFactor=0.150`
+
 
 ## Trouble Shooting
 
@@ -72,3 +75,10 @@ Looking in Sound, there seems to be two output modes, "Digital" and "Speakers", 
 
 - Apparently this is a dumb known issue...
   - https://askubuntu.com/questions/769593/16-04-headphones-detected-but-not-switched-on-automatically-after-startup
+
+
+
+
+
+
+
