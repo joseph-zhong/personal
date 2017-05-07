@@ -20,7 +20,8 @@
 
 ### Basics
 
-- `sudo update-pciids` will update the names of the drivers in the PCI slots
+- `sudo update-pciids` will update the names of the devices in the PCI slots
+  - Check them out here: `lspci`
 
 ## Trouble Shooting
 
