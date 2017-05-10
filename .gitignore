@@ -5,4 +5,7 @@ include
 lib
 .idea
 .vscode
-
+local
+share
+pip-*
+models
