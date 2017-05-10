@@ -19,3 +19,15 @@
 [submodule "queens"]
 	path = queens
 	url = git@github.com:joseph-zhong/queens.git
+[submodule "tf-faster-rcnn"]
+	path = tf-faster-rcnn
+	url = git@github.com:joseph-zhong/tf-faster-rcnn.git
+[submodule "fairseq"]
+	path = fairseq
+	url = git@github.com:facebookresearch/fairseq.git
+[submodule "awesome-deep-vision"]
+	path = awesome-deep-vision
+	url = git@github.com:kjw0612/awesome-deep-vision.git
+[submodule "msi-keyboard-gui"]
+	path = msi-keyboard-gui
+	url = git@github.com:joseph-zhong/msi-keyboard-gui.git
