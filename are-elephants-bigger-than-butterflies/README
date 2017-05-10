@@ -1,0 +1,35 @@
+===== WHAT’S THIS ====
+This is the source code for the paper "Are Elephants Bigger than Butterflies? Reasoning about Sizes of Objects" at AAAI 2016. The code is written in java and MATLAB.
+
+The current repository contains the java part which should be sufficient for testing the model. For training (collecting binary observations) you may need the Matlab part. If you really want to have that, contact the first author.
+
+
+==== CITATION ====
+[1] "Are Elephants Bigger than Butterflies? Reasoning about Sizes of Objects"
+Hessam Bagherinezhad, Hannaneh Hajishirzi, Yejin Choi, Ali Farhadi.
+AAAI 2016
+Project webpage: grail.cs.washington.edu/projects/size
+
+
+==== DATASET ====
+This repository comes with a dataset of 486 size comparisons between 41 physical objects. The dataset is located at data/datasets/ObjectSize/sizePairsFull.txt. Each line of this txt file contains two objects meaning that the first object is bigger than the second.
+
+
+==== HOW TO USE THIS ====
+This repository comes with a jar file called “runnable.jar”, that’s probably the easiest way to test the code:
+1. Run java -jar runnable.jar from command line.
+2. You’re in a shell screen where you have specific commands to use:
+	2.1. NODES: Prints the list of the nodes in the graph.
+	2.2. EDGES: Prints all of the edges of the graph.
+	2.3. COMPARE obj1 obj2: Compares the size of two objects that exist in the graph.
+	2.4. EVALUATE: Evaluates the model on the test dataset.
+	2.5. ERRORS: Prints the errors model has made from the comparisons in the dataset.
+3. There are more commands to use, for a complete list of commands, checkout the main function at edu/washington/cs/grail/relative_size/graph/LoadAndTestObjectsNetwork.java.
+
+The first time you want to compare the size of two objects it takes a little longer because it’s minimizing the log-likelihood. It should be instant after the first time.
+
+==== HOW TO RECOMPILE ====
+If you made a change in the source code and need to recompile it, you can do easily with a java compiler. You might need to use maven to download the dependencies listed in pom.xml.  For more information about maven, proceed to https://maven.apache.org/.
+
+
+
