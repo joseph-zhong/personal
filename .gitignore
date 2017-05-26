@@ -8,4 +8,6 @@ lib
 local
 share
 pip-*
-models
+**models
+**data
+
