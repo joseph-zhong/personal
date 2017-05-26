@@ -22,11 +22,14 @@ function [x_predict,y_predict,hm_results,net] = predict_gaze(img,e,net)
    if(mod(w_y,2)==0)
         w_y = w_y +1;
    end
-   
+
+   % Mean subtraction from the face image.
    im_face = ones(w_y,w_x,3,'uint8');
    im_face(:,:,1) = 123*ones(w_y,w_x,'uint8');
    im_face(:,:,2) = 117*ones(w_y,w_x,'uint8');
    im_face(:,:,3) = 104*ones(w_y,w_x,'uint8');
+
+   % Center of Face?
    center = floor([e(1)*size(img,2) e(2)*size(img,1)]);
    d_x = floor((w_x-1)/2);
    d_y = floor((w_y-1)/2);
@@ -55,10 +58,12 @@ function [x_predict,y_predict,hm_results,net] = predict_gaze(img,e,net)
          delta_t_y = w_y-(top_y-size(img,1));
          top_y = size(img,1);
     end
-    
+
+    % Add face image to input.
     im_face(delta_b_y:delta_t_y,delta_b_x:delta_t_x,:) = img(bottom_y:top_y,bottom_x:top_x,:);
     filelist(:,2) = {im_face};
 
+    % Add face location to input.
     f = zeros(1,1,169,'single');
     z = zeros(13,13,'single');
     x = floor(e(1)*13)+1;
